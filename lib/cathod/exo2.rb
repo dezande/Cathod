@@ -1,23 +1,29 @@
-class Exo2
-  # Counting The Number of Charaters
-  def phase1
-    word = question
-    puts "#{word} has #{word.length} characters."
-  end
+module Cathod
+  class Exo2 < Init
+    def initialize
+      super("main", "second", "third")
+    end
 
-  def phase2
-    word = question while word.nil? || (!word.nil? && word.empty?)
-    puts "#{word} has #{word.length} characters."
-  end
+    # Counting The Number of Charaters
+    def main
+      word = question
+      puts "#{word} has #{word.length} characters."
+    end
 
-  def phase3
-    puts "find a method"
-  end
+    def second
+      word = question while word.nil? || word.empty?
+      puts "#{word} has #{word.length} characters."
+    end
 
-  private
+    def third
+      puts "find a method"
+    end
 
-  def question
-    puts "What is the input string?"
-    gets.chomp
+    private
+
+    def question
+      print "What is the input string? "
+      STDIN.gets.chomp
+    end
   end
 end

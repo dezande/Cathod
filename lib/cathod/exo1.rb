@@ -1,24 +1,30 @@
-class Exo1
-  # Say Hello
-  
-  def phase1
-    question
-    name = gets.chomp
-    puts "Hello, #{name}, nice to meet you!"
-  end
+module Cathod
+  class Exo1 < Init
+    def initialize
+      super("main", "second", "third")
+    end
 
-  def phase2
-    question
-    puts "Hello, #{gets.chomp}, nice to meet you!"
-  end
+    # Say Hello
+    def main
+      question
+      name = STDIN.gets.chomp
+      puts "Hello, #{name}, nice to meet you!"
+    end
 
-  def phase3
-    puts "Revoir avec le l'exo 4."
-  end
+    # Say Hello without variable
+    def second
+      question
+      puts "Hello, #{STDIN.gets.chomp}, nice to meet you!"
+    end
 
-  private
+    def third
+      puts "Revoir avec le chapitre 4."
+    end
 
-  def question
-    puts "Whats your name?"
+    private
+
+    def question
+      print "Whats your name? "
+    end
   end
 end
