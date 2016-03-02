@@ -1,14 +1,19 @@
-class Exo3
-  # Printing Quotes
-  def phase1
-    puts "What is the quote?"
-    quote = gets.chomp
-    puts "Who said it?"
-    name = gets.chomp
-    puts "#{name} says, \"#{quote}\""
-  end
+module Cathod
+  class Exo3 < Init
+    def initialize
+      super("main", "second")
+    end
+    # Printing Quotes
+    def main
+      puts "What is the quote?"
+      quote = STDIN.gets.chomp
+      puts "Who said it?"
+      name = STDIN.gets.chomp
+      puts "#{name} says, \"#{quote}\""
+    end
 
-  def phase2
-    puts "See"
+    def second
+      puts "See"
+    end
   end
 end

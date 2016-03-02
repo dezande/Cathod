@@ -1,8 +1,12 @@
 module Cathod
   class Init
     def initialize(*list)
-      @list = list
-      send(welcome) # Welcome is a method
+      unless list.nil?
+        send(main)
+      else
+        @list = list
+        send(welcome) # Welcome is a method
+      end
     end
 
     def welcome

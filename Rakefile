@@ -20,3 +20,18 @@ desc "Exo 3 - page 14"
 task :exo3 do
   Cathod::Exo3.new
 end
+
+desc "Exo 4 - page 15"
+task :exo4 do
+  Cathod::Exo4.new
+end
+
+desc "Exo 5 - page 16"
+task :exo5 do
+  Cathod::Exo5.new
+end
+
+desc "Exo 6 - page 16"
+task :exo6 do
+  Cathod::Exo6.new
+end

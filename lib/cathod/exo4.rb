@@ -1,13 +1,15 @@
-class Exo4
-  def phase1
-    print "Enter a noun: "
-    noun = gets.chomp
-    print "Enter a verb: "
-    verb = gets.chomp
-    print "Enter a adjective: "
-    adjective = gets.chomp
-    print "Enter a adverb: "
-    adverb = gets.chomp
-    puts "Do you #{verb} your #{adjective} #{noun} #{adverb}? That's hilarious!"
+module Cathod
+  class Exo4 < Init
+    def main
+      print "Enter a noun: "
+      noun = STDIN.gets.chomp
+      print "Enter a verb: "
+      verb = STDIN.gets.chomp
+      print "Enter a adjective: "
+      adjective = STDIN.gets.chomp
+      print "Enter a adverb: "
+      adverb = STDIN.gets.chomp
+      puts "Do you #{verb} your #{adjective} #{noun} #{adverb}? That's hilarious!"
+    end
   end
 end
