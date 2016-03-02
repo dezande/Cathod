@@ -1,10 +1,10 @@
 module Cathod
-  class Exo5
+  class Exo5 < Init
     def main
       print "What is the first number? "
-      x = gets.chomp.to_i
+      x = STDIN.gets.chomp.to_i
       print "What is the second number? "
-      y = gets.chomp.to_i
+      y = STDIN.gets.chomp.to_i
       puts "#{x} + #{y} = #{x + y}"
       puts "#{x} - #{y} = #{x - y}"
       puts "#{x} * #{y} = #{x * y}"

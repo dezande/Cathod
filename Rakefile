@@ -31,7 +31,7 @@ task :exo5 do
   Cathod::Exo5.new
 end
 
-desc "Exo 6 - page 16"
+desc "Exo 6 - page 17"
 task :exo6 do
   Cathod::Exo6.new
 end
